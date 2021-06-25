@@ -1,7 +1,13 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib/framework';
+import dark from './vuetify/theme';
 
-Vue.use(Vuetify);
+Vue.use(Vuetify)
 
-export default new Vuetify({
-});
+const vuetify = new Vuetify({
+  theme: {
+    themes: {dark}
+  },
+})
+
+export default vuetify
