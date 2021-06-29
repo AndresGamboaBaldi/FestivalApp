@@ -3,6 +3,7 @@
     <v-main>
       <Store-card/>
       <Hello-world/>
+      <ScheduleCard/>
       <Footer/>
     </v-main>
   </v-app>
@@ -10,10 +11,10 @@
 
 <script>
 import HelloWorld from './components/HelloWorld';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 //import HelloWorld from './components/HelloWorld';
-
 import StoreCard from './components/StoreCard/StoreCard.vue';
+import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
 
 export default {
   name: 'App',
@@ -21,7 +22,8 @@ export default {
   components: {
     HelloWorld,
     Footer,
-    StoreCard
+    StoreCard,
+    ScheduleCard
   },
   computed: {
    cssProps () {
