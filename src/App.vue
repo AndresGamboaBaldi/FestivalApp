@@ -1,27 +1,36 @@
 <template>
   <v-app :style="cssProps">
     <v-main>
-      <Store-card/>
-      <Hello-world/>
-      <Footer/>
+      <store-card/>
+      <ticket-card/>
+      <events-card/>
+      <news-card/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-import Footer from './components/Footer';
 //import HelloWorld from './components/HelloWorld';
-
+//import Footer from './components/Footer/Footer.vue';
+//import HelloWorld from './components/HelloWorld';
+//<store-card/>
+//<ticket-card/>
+//<events-card/>
 import StoreCard from './components/StoreCard/StoreCard.vue';
+import TicketCard from './components/TicketCard/TicketCard.vue';
+import EventsCard from './components/EventsCard/EventsCard.vue'
+import NewsCard from './components/NewsCard/NewsCard.vue'
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
-    Footer,
-    StoreCard
+    //HelloWorld,
+    //Footer,
+    StoreCard,
+    TicketCard,
+    EventsCard,
+    NewsCard
   },
   computed: {
    cssProps () {
