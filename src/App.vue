@@ -1,29 +1,56 @@
 <template>
   <v-app :style="cssProps">
     <v-main>
+      <store-card/>
+      <ticket-card/>
+      <events-card/>
+      <news-card/>
+      <Carousel/>
+      <!--
       <Store-card/>
       <Hello-world/>
       <ScheduleCard/>
       <Footer/>
+      -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-import Footer from './components/Footer/Footer';
+//import HelloWorld from './components/HelloWorld';
+//import Footer from './components/Footer/Footer';
 //import HelloWorld from './components/HelloWorld';
 import StoreCard from './components/StoreCard/StoreCard.vue';
-import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
+//import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
+//import HelloWorld from './components/HelloWorld';
+//import Footer from './components/Footer/Footer.vue';
+//import HelloWorld from './components/HelloWorld';
+//<store-card/>
+//<ticket-card/>
+//<events-card/>
+import TicketCard from './components/TicketCard/TicketCard.vue';
+import EventsCard from './components/EventsCard/EventsCard.vue'
+import NewsCard from './components/NewsCard/NewsCard.vue'
+import Carousel from './components/Carousel/Carousel.vue';
+//import HelloWorld from './components/HelloWorld';
+//import Footer from './components/Footer/Footer.vue';
+
+//import StoreCard from './components/StoreCard/StoreCard.vue';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
-    Footer,
+    //HelloWorld,
+    //Footer,
+    //ScheduleCard,
+    //HelloWorld,
+    //Footer,
     StoreCard,
-    ScheduleCard
+    TicketCard,
+    EventsCard,
+    NewsCard,
+    Carousel
   },
   computed: {
    cssProps () {

@@ -1,0 +1,39 @@
+@import '../../styles/variables'
+
+.fest-events-card.v-card 
+    height: 200px
+    width: 176px
+    padding: 0px
+    filter: opacity(80%)
+    border-radius: 0px !important
+
+.fest-events-card.v-card:hover
+    filter: opacity(100%)
+
+.fest-events-card.v-card .v-card__title
+    position: absolute
+    top: 160px
+    left: $spacing-32
+    font-size: map-get($fonts-footerBold, 'size')
+    line-height: map-get($fonts-footerBold, 'line-height')
+    font-weight: map-get($fonts-footerBold, 'weight')
+    width: 112px
+    height: $layout-32 
+    text-align: center
+    display: block 
+    color: var(--v-charcoal50)
+    padding: 0px
+
+.fest-events-card.v-card .v-card__subtitle
+    position: absolute
+    bottom: -22px
+    left: 22px
+    font-size: map-get($fonts-footer, 'size')
+    line-height: map-get($fonts-footer, 'line-height')
+    font-weight: map-get($fonts-footer, 'weight')
+    width: 144px
+    height: 18px
+    text-align: center
+    display: block 
+    color: var(--v-charcoal50) !important
+    padding: 0px

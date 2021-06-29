@@ -1,0 +1,40 @@
+@import '../../styles/variables'
+
+.fest-news-card.v-card 
+    height: 296px
+    width: 176px
+    padding: 0px
+    filter: brightness(75%)
+    border-radius: 0px !important
+
+.fest-news-card.v-card:hover
+    filter: brightness(100%)
+
+.fest-news-card.v-card .v-card__title
+    position: absolute
+    top: 216px
+    left: 8px
+    font-size: map-get($fonts-footerBold, 'size')
+    line-height: map-get($fonts-footerBold, 'line-height')
+    font-weight: map-get($fonts-footerBold, 'weight')
+    width: 160px
+    height: $layout-16
+    text-align: center
+    display: block 
+    color: var(--v-charcoal50)
+    padding: 0px
+
+.fest-news-card.v-card .v-card__text
+    position: absolute
+    top: 240px
+    left: $spacing-8
+    font-size: map-get($fonts-footer, 'size')
+    line-height: map-get($fonts-footer, 'line-height')
+    font-weight: map-get($fonts-footer, 'weight')
+    width: 160px
+    height: $spacing-40
+    text-align: center
+    display: block 
+    color: var(--v-charcoal50) !important
+    padding: 0px
+
