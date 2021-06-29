@@ -5,6 +5,12 @@
       <ticket-card/>
       <events-card/>
       <news-card/>
+      <Carousel/>
+      <!--
+      <Store-card/>
+      <Hello-world/>
+      <Footer/>
+      -->
     </v-main>
   </v-app>
 </template>
@@ -20,6 +26,11 @@ import StoreCard from './components/StoreCard/StoreCard.vue';
 import TicketCard from './components/TicketCard/TicketCard.vue';
 import EventsCard from './components/EventsCard/EventsCard.vue'
 import NewsCard from './components/NewsCard/NewsCard.vue'
+import Carousel from './components/Carousel/Carousel.vue';
+//import HelloWorld from './components/HelloWorld';
+//import Footer from './components/Footer/Footer.vue';
+
+//import StoreCard from './components/StoreCard/StoreCard.vue';
 
 export default {
   name: 'App',
@@ -30,7 +41,8 @@ export default {
     StoreCard,
     TicketCard,
     EventsCard,
-    NewsCard
+    NewsCard,
+    Carousel
   },
   computed: {
    cssProps () {
