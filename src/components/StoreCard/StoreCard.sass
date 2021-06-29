@@ -10,19 +10,20 @@
     filter: brightness(90%)
 
 .fest-store-card.v-card:hover .v-card__title
-    font-weight: bold
+    font-weight: map-get($fonts-titlebold, 'weight')
     // $fonts-titlebold 
 
 
 .fest-store-card.v-card .v-card__title
-    //font: $fonts-title
+    //font:  map-get($fonts, 'title')
     position: absolute
     margin: $layout-16
     bottom: $layout-16
-    font-size: 40px 
-    line-height: 46px 
+    font-size: map-get($fonts-title, 'size')
+    line-height:  map-get($fonts-title, 'line-height')
+    font-weight:  map-get($fonts-title, 'weight')
     width: 248px 
     height: 58px 
     text-align: center
     display: block 
-    color: #FFF
+    color: var(--v-primary-base)
