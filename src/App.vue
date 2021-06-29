@@ -38,19 +38,24 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <!--
+        <HelloWorld/>
+      -->
+      <Carousel/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+//import HelloWorld from './components/HelloWorld';
+import Carousel from './components/Carousel';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    //HelloWorld,
+    Carousel,
   },
 
   data: () => ({
