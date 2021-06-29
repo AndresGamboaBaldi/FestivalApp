@@ -1,6 +1,6 @@
 <template>
-  <v-card class="store-card" img="https://catalog.21buttons.com/e9f3b44504e17c16049e36c6fa480c72a7aa4ab1.smedium.jpg">
-    <v-card-title>
+  <v-card class="fest-store-card" img="https://catalog.21buttons.com/e9f3b44504e17c16049e36c6fa480c72a7aa4ab1.smedium.jpg">
+    <v-card-title class="fest-store-card">
       Poleras
     </v-card-title>
   </v-card>
