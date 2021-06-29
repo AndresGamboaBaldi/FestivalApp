@@ -2,20 +2,22 @@
   <v-app :style="cssProps">
     <v-main>
       <Carousel/>
+      <!--
       <Store-card/>
       <Hello-world/>
       <Footer/>
+      -->
     </v-main>
   </v-app>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld';
-import Carousel from './components/Carousel';
-import HelloWorld from './components/HelloWorld';
-import Footer from './components/Footer';
+import Carousel from './components/Carousel/Carousel.vue';
+//import HelloWorld from './components/HelloWorld';
+//import Footer from './components/Footer/Footer.vue';
 
-import StoreCard from './components/StoreCard/StoreCard.vue';
+//import StoreCard from './components/StoreCard/StoreCard.vue';
 
 export default {
   name: 'App',
@@ -23,9 +25,9 @@ export default {
   components: {
     //HelloWorld,
     Carousel,
-    HelloWorld,
-    Footer,
-    StoreCard
+    //HelloWorld,
+    //Footer,
+    //StoreCard
   },
   computed: {
    cssProps () {
