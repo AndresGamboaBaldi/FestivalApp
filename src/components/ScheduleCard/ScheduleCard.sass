@@ -1,0 +1,29 @@
+@import '../../styles/variables'
+
+.fest-schedule-card.v-card 
+    height: 200px
+    width: 800px
+    padding: 0px
+    filter: brightness(60%)
+
+.fest-schedule-card.v-card:hover
+    filter: brightness(90%)
+
+.fest-schedule-card.v-card:hover .v-card__title
+    font-weight: map-get($fonts-titlebold, 'weight')
+    // $fonts-titlebold 
+
+.fest-schedule-card.v-card .v-card__title
+    //font:  map-get($fonts, 'title')
+    padding: 0px
+    position: absolute
+    margin-top: 78px
+    margin-left: calc((800px - 248px) /2 )
+    font-size: map-get($fonts-title, 'size')
+    line-height:  map-get($fonts-title, 'line-height')
+    font-weight:  map-get($fonts-title, 'weight')
+    width: 248px 
+    height: 58px 
+    text-align: center
+    display: block 
+    color: var(--v-primary50)
