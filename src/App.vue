@@ -1,18 +1,44 @@
 <template>
   <v-app :style="cssProps">
-    <v-main>
-    </v-main>
+    <!--<v-main>
+      
+      <home-view/>
+      <store-card/>
+      <ticket-card/>
+      <events-card/>
+      <news-card/>
+      <CarouselLarge/>
+      <CarouselLong/>
+      <Store-card/>
+      <Hello-world/>
+      <ScheduleCard/>
+      <carousel/>
+      <schedule-card/>
+      <Footer/>
+      <schedule-card  v-for="card in schedulecards"
+          :key="card.id"
+          :imagen="card.imagen" 
+          :texto="card.texto"></schedule-card>  
+    </v-main> -->
+    <Header></Header>
     <router-view></router-view>
+    <Footer></Footer>
   </v-app>
 </template>
 
 <script>
 
+import Header from './components/Header/Header.vue'
+import Footer from './components/Footer/Footer.vue';
+import HomeView from "./views/HomeView/HomeView.vue"
 export default {
   
   name: 'App',
 
   components: {
+   Footer,
+   Header,
+   HomeView
   },
   computed: {
    cssProps () {

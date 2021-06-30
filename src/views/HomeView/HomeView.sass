@@ -1,0 +1,32 @@
+@import '../../styles/variables'
+#fest-home-body
+    position: relative
+    top: 104px
+    left: calc( (100% - 712px) /2 )
+    min-height: 100vh
+
+
+#fest-home-background
+    background-image: url("https://wallpapercave.com/wp/wp1889481.jpg")
+    background-size: cover
+    min-height: 100%
+    width: 100%
+    position: fixed
+    filter: blur(5px) brightness(50%)
+
+#fest-home-event-text
+    position: relative
+    font-size: map-get($fonts-paragraphSbold, 'size')
+    line-height:  map-get($fonts-paragraphSbold, 'line-height')
+    font-weight:  map-get($fonts-paragraphSbold, 'weight')
+    color: var(--v-primary50)
+    top: $layout-24
+    border-bottom: solid
+    left: -166px
+    width: 128px
+    height: 24px
+
+#fest-home-footer
+    position: fixed
+    bottom: 0px
+    width: 100%
