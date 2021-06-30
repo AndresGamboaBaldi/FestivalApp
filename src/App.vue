@@ -1,8 +1,8 @@
 <template>
   <v-app :style="cssProps">
     <v-main>
-      
-      <home-view/>
+      <Tickets/>
+      <!--home-view/-->
       <!--<store-card/>
       <ticket-card/>
       <events-card/>
@@ -48,7 +48,8 @@ import NewsCard from './components/NewsCard/NewsCard.vue'
 import Carousel from './components/Carousel/Carousel.vue';
 import Footer from './components/Footer/Footer.vue';
 */
-import HomeView from "./views/HomeView/HomeView.vue"
+//import HomeView from "./views/HomeView/HomeView.vue"
+import Tickets from "./views/TicketsView/Tickets.vue"
 export default {
   name: 'App',
 
@@ -73,7 +74,8 @@ export default {
     NewsCard,
     Carousel
     */
-   HomeView
+   //HomeView
+    Tickets
   },
   computed: {
    cssProps () {

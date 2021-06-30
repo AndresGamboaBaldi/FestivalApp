@@ -1,11 +1,24 @@
 <template>
     <v-app-bar id="fest-header" class="v-toolbar__content .v-toolbar__extension">
+      <v-btn>
       <v-icon class="fest-firsticon">mdi-fire</v-icon>
+      </v-btn>
+      <v-btn>
       <v-col class="fest-firstcol"> {{ tienda[0] }} </v-col>
-      <v-col class="fest-col"> {{ tienda[1] }} </v-col>
+      </v-btn>
+      <v-btn>
+      <v-col class="fest-col"> {{ tienda[1] }} </v-col> 
+      </v-btn>
+      <v-btn>
       <v-col class="fest-col"> {{ tienda[2] }} </v-col>
-      <v-col class="fest-lastcol"> {{ tienda[3] }} </v-col>
+      </v-btn>
+      <v-btn>
+      <v-col class="fest-lastcol"> {{ tienda[3] }} </v-col>      
+      </v-btn>
+      <v-btn>
       <v-icon class="fest-lasticon">mdi-account-circle-outline</v-icon>
+      </v-btn>
+      
     </v-app-bar>
 </template>
 
