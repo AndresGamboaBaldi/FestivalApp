@@ -40,7 +40,7 @@
         </v-col>
       </v-row>
 
-      <v-divider ></v-divider>
+      <v-divider id="divider"></v-divider>
 
       <v-card-text>
           <v-icon size="24px"
