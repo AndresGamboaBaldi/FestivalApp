@@ -1,42 +1,18 @@
 <template>
   <v-app :style="cssProps">
     <v-main>
-      <store-card/>
-      <ticket-card/>
-      <events-card/>
-      <news-card/>
-      <carousel/>
-      <schedule-card/>
-      <Footer/>
-      <schedule-card  v-for="card in schedulecards"
-          :key="card.id"
-          :imagen="card.imagen" 
-          :texto="card.texto"></schedule-card>    
     </v-main>
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
 
-import StoreCard from './components/StoreCard/StoreCard.vue';
-import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
-import TicketCard from './components/TicketCard/TicketCard.vue';
-import EventsCard from './components/EventsCard/EventsCard.vue'
-import NewsCard from './components/NewsCard/NewsCard.vue'
-import Carousel from './components/Carousel/Carousel.vue';
-import Footer from './components/Footer/Footer.vue';
-
 export default {
+  
   name: 'App',
 
   components: {
-    ScheduleCard,
-    Footer,
-    StoreCard,
-    TicketCard,
-    EventsCard,
-    NewsCard,
-    Carousel
   },
   computed: {
    cssProps () {

@@ -1,0 +1,24 @@
+@import '../../styles/variables'
+
+#fest-schedule-title
+    height : 320px 
+    font-size: map-get($fonts-titlebold, 'size')
+    line-height:  map-get($fonts-titlebold, 'line-height')
+    font-weight:  map-get($fonts-titlebold, 'weight')
+    color: var(--v-primary50)
+    margin-top: $layout-16
+    margin-bottom: $layout-32
+    margin-left: calc((100vw - 312px) /2)
+.fest-schedule.v-card
+    margin-bottom: 8px
+    margin-left: calc((100vw - 800px) /2)
+#schedule
+    background-image: url('~@/assets/ScheduleBackground.png')
+    background-size: cover
+    min-height: 100%
+    width: 100%
+    position: fixed
+    height: 100vh
+#body
+    margin-top: $layout-32
+    margin-bottom: $layout-56

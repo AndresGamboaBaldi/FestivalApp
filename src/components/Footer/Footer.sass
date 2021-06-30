@@ -7,11 +7,6 @@
     text-align: center
     color: var(--v-primary50)
     padding: 0px
-    
-.row
-   margin: 0px
-   text-align: center
-
 #fest-card
     height : 272px 
     width: 840px
@@ -20,24 +15,28 @@
     background-color: var(--v-primary700)
     text-align: center
     color: var(--v-primary50)
-.fest-coltitles
+.fest-footer-col
+    text-align: left
+    margin-right : $layout-80
+    width: 150px
+.fest-footer-col.col
+    padding: 0px
+.fest-footer-title
     font-size: map-get($fonts-paragraphSbold, 'size')
     line-height:  map-get($fonts-paragraphSbold, 'line-height')
     font-weight:  map-get($fonts-paragraphSbold, 'weight')
-    text-align: left
-    margin-right : $layout-80
-    padding: 0px
     width: 150px
-    margin-bottom: $layout-48
-.fest-coltitles .row
+    height: 24px
+.fest-footer-body
     font-size: map-get($fonts-footer, 'size')
-    line-height:  map-get($fonts-footer, 'line-height')
-    font-weight:  map-get($fonts-footer, 'weight')
-    text-align: left
+    line-height: map-get($fonts-footer, 'line-height')
+    font-weight: map-get($fonts-footer, 'weight')
     width: 150px
-    margin-top : $layout-16
-    margin-bottom: $layout-16
     height: 16px
+.fest-footer-title.row
+    margin: 0px 0px 16px 0px
+.fest-footer-body.row
+    margin: 0px 0px 16px 0px
 #fest-lastcol
     margin : 0px  
     width: 150px
@@ -46,5 +45,6 @@
     width: 1144px
     margin-left: -152px
     max-width: 1144px
+    margin-top: $layout-48
  
     
