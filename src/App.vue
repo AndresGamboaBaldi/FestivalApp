@@ -25,6 +25,7 @@
 //<ticket-card/>
 //<events-card/>
 /*
+import Header from './components/Header/Header.vue'
 import StoreCard from './components/StoreCard/StoreCard.vue';
 import TicketCard from './components/TicketCard/TicketCard.vue';
 import EventsCard from './components/EventsCard/EventsCard.vue'
@@ -37,6 +38,7 @@ export default {
 
   components: {
     /*
+      Header,
       Footer,
       ScheduleCard,
       StoreCard,
