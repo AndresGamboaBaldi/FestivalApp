@@ -1,12 +1,13 @@
 <template>
   <v-app :style="cssProps">
     <v-main>
+      <!--
       <store-card/>
       <ticket-card/>
       <events-card/>
       <news-card/>
-      <Carousel/>
-      <!--
+      <CarouselLarge/>
+      <CarouselLong/>
       <Store-card/>
       <Hello-world/>
       <ScheduleCard/>
@@ -17,40 +18,34 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld';
 //import Footer from './components/Footer/Footer';
-//import HelloWorld from './components/HelloWorld';
-import StoreCard from './components/StoreCard/StoreCard.vue';
 //import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
-//import HelloWorld from './components/HelloWorld';
 //import Footer from './components/Footer/Footer.vue';
-//import HelloWorld from './components/HelloWorld';
 //<store-card/>
 //<ticket-card/>
 //<events-card/>
+/*
+import StoreCard from './components/StoreCard/StoreCard.vue';
 import TicketCard from './components/TicketCard/TicketCard.vue';
 import EventsCard from './components/EventsCard/EventsCard.vue'
 import NewsCard from './components/NewsCard/NewsCard.vue'
-import Carousel from './components/Carousel/Carousel.vue';
-//import HelloWorld from './components/HelloWorld';
-//import Footer from './components/Footer/Footer.vue';
-
-//import StoreCard from './components/StoreCard/StoreCard.vue';
-
+import CarouselLarge from './components/Carousel/CarouselLarge.vue';
+import CarouselLong from './components/Carousel/CarouselLong.vue';
+*/
 export default {
   name: 'App',
 
   components: {
-    //HelloWorld,
-    //Footer,
-    //ScheduleCard,
-    //HelloWorld,
-    //Footer,
-    StoreCard,
-    TicketCard,
-    EventsCard,
-    NewsCard,
-    Carousel
+    /*
+      Footer,
+      ScheduleCard,
+      StoreCard,
+      TicketCard,
+      EventsCard,
+      NewsCard,
+      CarouselLarge,
+      CarouselLong
+    */
   },
   computed: {
    cssProps () {
