@@ -1,11 +1,13 @@
 <template>
   <v-app :style="cssProps">
     <v-main>
+      <Header/>
       <store-card/>
       <ticket-card/>
       <events-card/>
       <news-card/>
       <Carousel/>
+      <Footer/>
       <!--
       <Store-card/>
       <Hello-world/>
@@ -32,8 +34,9 @@ import TicketCard from './components/TicketCard/TicketCard.vue';
 import EventsCard from './components/EventsCard/EventsCard.vue'
 import NewsCard from './components/NewsCard/NewsCard.vue'
 import Carousel from './components/Carousel/Carousel.vue';
+import Header from './components/Header/Header.vue';
 //import HelloWorld from './components/HelloWorld';
-//import Footer from './components/Footer/Footer.vue';
+import Footer from './components/Footer/Footer.vue';
 
 //import StoreCard from './components/StoreCard/StoreCard.vue';
 
@@ -50,7 +53,9 @@ export default {
     TicketCard,
     EventsCard,
     NewsCard,
-    Carousel
+    Carousel,
+    Header,
+Footer
   },
   computed: {
    cssProps () {
