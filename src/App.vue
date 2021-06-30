@@ -18,18 +18,14 @@
       <schedule-card  v-for="card in schedulecards"
           :key="card.id"
           :imagen="card.imagen" 
-          :texto="card.texto"></schedule-card>  -->  
+          :texto="card.texto"></schedule-card>   
+      <LoginView/>
+      -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-//import Footer from './components/Footer/Footer';
-//import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
-//import Footer from './components/Footer/Footer.vue';
-//<store-card/>
-//<ticket-card/>
-//<events-card/>
 /*
 import Header from './components/Header/Header.vue'
 import StoreCard from './components/StoreCard/StoreCard.vue';
@@ -38,15 +34,12 @@ import EventsCard from './components/EventsCard/EventsCard.vue'
 import NewsCard from './components/NewsCard/NewsCard.vue'
 import CarouselLarge from './components/Carousel/CarouselLarge.vue';
 import CarouselLong from './components/Carousel/CarouselLong.vue';
-*/
-/*
-import StoreCard from './components/StoreCard/StoreCard.vue';
+import LoginView from './components/LoginView/LoginView.vue'
 import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
-import TicketCard from './components/TicketCard/TicketCard.vue';
-import EventsCard from './components/EventsCard/EventsCard.vue'
-import NewsCard from './components/NewsCard/NewsCard.vue'
-import Carousel from './components/Carousel/Carousel.vue';
 import Footer from './components/Footer/Footer.vue';
+<store-card/>
+<ticket-card/>
+<events-card/>
 */
 import HomeView from "./views/HomeView/HomeView.vue"
 export default {
@@ -62,16 +55,8 @@ export default {
       EventsCard,
       NewsCard,
       CarouselLarge,
-      CarouselLong
-    */
-   /*
-    ScheduleCard,
-    Footer,
-    StoreCard,
-    TicketCard,
-    EventsCard,
-    NewsCard,
-    Carousel
+      CarouselLong,
+      LoginView,
     */
    HomeView
   },
