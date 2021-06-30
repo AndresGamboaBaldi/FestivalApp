@@ -1,6 +1,6 @@
 <template>
-  <div >
-    <div class='login_view'>
+  <div class='backgroundView'>
+    <div class='login_view' >
         <v-row>
             <v-col id="login-carousel">
                 <CarouselLarge />
@@ -70,20 +70,17 @@
             </v-col>
         </v-row>  
     </div>
-    <Footer/>
   </div>
 </template>
 
 <script>
   import "./LoginView.sass"
   import CarouselLarge from '../Carousel/CarouselLarge.vue';
-  import Footer from '..//Footer/Footer.vue';
   export default {
     name: 'LoginView',
 
     components: {
     CarouselLarge,
-    Footer,
     },
     data:function () {
         return {
