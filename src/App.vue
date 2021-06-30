@@ -1,9 +1,13 @@
 <template>
   <v-app :style="cssProps">
     <v-main>
-      
       <home-view/>
-      <!--<store-card/>
+      <!--<events-card v-for="card in schedulecards"
+        :key="card.id"
+        :imagen="card.imagen"
+        :texto="card.texto"
+        :subtitulo="card.subtitulo"></events-card> 
+      <store-card/>
       <ticket-card/>
       <events-card/>
       <news-card/>
@@ -75,12 +79,14 @@ export default {
       {
         id: 1,
         imagen: "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/12/28/16091698032437.jpg",
-        texto: "Viernes" 
+        texto: "Viernes",
+        subtitulo: "jabalajaba"
       },
        {
         id:2,
         imagen:  "https://www.brusselstimes.com/wp-content/uploads/2019/04/k2_items_src_885112323029b4ff67c59e5af71d2a8a.jpg",
-        texto: "Sabado" 
+        texto: "Sabado",
+        subtitulo: "jabalajaba2"
       }
     ],
     

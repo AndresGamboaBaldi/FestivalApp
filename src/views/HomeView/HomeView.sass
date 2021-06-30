@@ -1,10 +1,19 @@
 @import '../../styles/variables'
+
+.body
+    margin-top: 74px    
+
+#fest-home-header
+    position: fixed
+    top: 16px
+    left: calc( (100% - 1200px)/2 )
+    z-index: 2
+
 #fest-home-body
     position: relative
     top: 104px
     left: calc( (100% - 712px) /2 )
-    min-height: 100vh
-
+    min-height: 156vh
 
 #fest-home-background
     background-image: url("https://wallpapercave.com/wp/wp1889481.jpg")
@@ -17,8 +26,8 @@
 #fest-home-event-text
     position: relative
     font-size: map-get($fonts-paragraphSbold, 'size')
-    line-height:  map-get($fonts-paragraphSbold, 'line-height')
-    font-weight:  map-get($fonts-paragraphSbold, 'weight')
+    line-height: map-get($fonts-paragraphSbold, 'line-height')
+    font-weight: map-get($fonts-paragraphSbold, 'weight')
     color: var(--v-primary50)
     top: $layout-24
     border-bottom: solid
@@ -26,7 +35,40 @@
     width: 128px
     height: 24px
 
+#fest-home-events-row
+    position: relative
+    top: $layout-48
+    left: -166px
+
+.fest-home-events-list
+    float: left
+    margin-right: $spacing-40
+    position: relative
+
+#fest-home-news-text
+    position: relative
+    font-size: map-get($fonts-paragraphSbold, 'size')
+    line-height: map-get($fonts-paragraphSbold, 'line-height')
+    font-weight: map-get($fonts-paragraphSbold, 'weight')
+    color: var(--v-primary50)
+    margin-top: 310px
+    border-bottom: solid
+    left: -166px
+    width: 128px
+    height: 24px
+
+#fest-home-news-row
+    position: relative
+    top: $layout-48
+    left: -166px
+    height: 296px
+
+.fest-home-news-list
+    float: left
+    margin-right: $spacing-40
+    position: relative
+
 #fest-home-footer
-    position: fixed
+    position: relative
     bottom: 0px
     width: 100%

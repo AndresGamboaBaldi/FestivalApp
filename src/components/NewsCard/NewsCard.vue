@@ -1,10 +1,10 @@
 <template>
-  <v-card class="fest-news-card" img="https://plus.cusica.com/wp-content/uploads/2021/06/coldplay-1-696x696-1.jpg">
+  <v-card class="fest-news-card" :img="imagen">
     <v-card-title class="fest-news-card">
-      Festival Card
+      {{titulo}}
     </v-card-title>
     <v-card-text class="fest-news-card">
-        Listen to the latest song by Coldplay
+        {{texto}}
     </v-card-text>
   </v-card>
 </template>
@@ -13,6 +13,20 @@
 import "./NewsCard.sass"
 export default {
   name: 'NewsCard',
+  props: {
+    imagen: {
+      type: String,
+      default:"https://plus.cusica.com/wp-content/uploads/2021/06/coldplay-1-696x696-1.jpg"
+    },
+    texto:{
+      type: String,
+      default: " Escucha el ultimo sencillo de coldplay"
+    },
+    titulo:{
+      type: String,
+      default: "Higher power"
+    }
+  },
   data(){
     return{
       image:[
