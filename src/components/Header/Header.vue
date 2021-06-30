@@ -1,10 +1,11 @@
 <template>
     <v-app-bar id="fest-header" class="v-toolbar__content .v-toolbar__extension">
       <v-icon class="fest-firsticon">mdi-fire</v-icon>
-      <v-col class="fest-firstcol"> {{ tienda[0] }} </v-col>
-      <v-col class="fest-col"> {{ tienda[1] }} </v-col>
-      <v-col class="fest-col"> {{ tienda[2] }} </v-col>
-      <v-col class="fest-lastcol"> {{ tienda[3] }} </v-col>
+      <v-col class="fest-firstcol"> {{ titles[0] }} </v-col>
+      <v-col class="fest-col"> {{ titles[1] }} </v-col>
+      <v-col class="fest-col"> {{ titles[2] }} </v-col>
+      <v-col class="fest-col"> {{ titles[2] }} </v-col>
+      <v-col class="fest-lastcol"> {{ titles[4] }} </v-col>
       <v-icon class="fest-lasticon">mdi-account-circle-outline</v-icon>
     </v-app-bar>
 </template>
@@ -14,7 +15,7 @@
   export default {
     name: 'Header',
     data: () => ({
-      titles: ['NOVEDADES', 'CRONOGRAMA', 'TIENDA', 'INFORMACION'],
+      titles: ['Novedades', 'Cronograma','Tickets', 'Tienda', 'Informacion'],
       novedades: ['Proximos Eventos', 'Artistas', 'Antiguos Eventos'],
       cronograma: ['Viernes', 'Sabado', 'Domingo', 'Lunes'],
       tienda: ['Poleras', 'Sombreros', 'Accesorios', 'Otros'],
