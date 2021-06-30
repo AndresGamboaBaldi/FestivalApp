@@ -2,7 +2,8 @@
   <v-app :style="cssProps">
     <v-main>
       
-      <store-card/>
+      <home-view/>
+      <!--<store-card/>
       <ticket-card/>
       <events-card/>
       <news-card/>
@@ -17,7 +18,7 @@
       <schedule-card  v-for="card in schedulecards"
           :key="card.id"
           :imagen="card.imagen" 
-          :texto="card.texto"></schedule-card>    
+          :texto="card.texto"></schedule-card>  -->  
     </v-main>
   </v-app>
 </template>
@@ -37,7 +38,7 @@ import NewsCard from './components/NewsCard/NewsCard.vue'
 import CarouselLarge from './components/Carousel/CarouselLarge.vue';
 import CarouselLong from './components/Carousel/CarouselLong.vue';
 */
-
+/*
 import StoreCard from './components/StoreCard/StoreCard.vue';
 import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
 import TicketCard from './components/TicketCard/TicketCard.vue';
@@ -45,7 +46,8 @@ import EventsCard from './components/EventsCard/EventsCard.vue'
 import NewsCard from './components/NewsCard/NewsCard.vue'
 import Carousel from './components/Carousel/Carousel.vue';
 import Footer from './components/Footer/Footer.vue';
-
+*/
+import HomeView from "./views/HomeView/HomeView.vue"
 export default {
   name: 'App',
 
@@ -60,6 +62,7 @@ export default {
       CarouselLarge,
       CarouselLong
     */
+   /*
     ScheduleCard,
     Footer,
     StoreCard,
@@ -67,6 +70,8 @@ export default {
     EventsCard,
     NewsCard,
     Carousel
+    */
+   HomeView
   },
   computed: {
    cssProps () {
