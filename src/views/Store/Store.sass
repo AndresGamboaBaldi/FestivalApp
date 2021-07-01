@@ -1,0 +1,47 @@
+@import '../../styles/variables'
+
+#fest-store-title
+    height : 320px 
+    font-size: map-get($fonts-titlebold, 'size')
+    line-height:  map-get($fonts-titlebold, 'line-height')
+    font-weight:  map-get($fonts-titlebold, 'weight')
+    color: var(--v-primary50)
+    margin-left: calc((100vw - 160px) /2)
+    margin-top: 104px
+#store
+    background-image: url('~@/assets/backgroundTienda.png')
+    background-size: cover
+    min-height: 100%
+    width: 100%
+    height: 100%
+#body
+    margin-top: $layout-16
+#footer 
+    margin-top: $layout-56
+    height: 320px
+#header 
+    position: fixed
+    top: 16px
+    z-index: 2
+    left: calc( (100% - 1200px)/2)
+#button
+    background-color: var(--v-primary50)
+    color: #000000
+    height: 28px
+    width: 160px
+    margin-left: calc((100vw - 160px) /2)
+    margin-bottom: $layout-64
+    font-size: map-get($fonts-paragraphS, 'size')
+    line-height: map-get($fonts-paragraphS, 'line-height')
+    font-weight: map-get($fonts-paragraphS, 'weight')
+#cards
+    margin-left: calc((100vw - 1144px) /2)
+.fest-store-cards
+    padding: 0px
+    width: 280px
+    margin-right: $layout-8
+.col
+    flex-grow: 0
+    padding: 0px
+#titlediv
+    margin-top: 104px
