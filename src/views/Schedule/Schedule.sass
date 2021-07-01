@@ -6,8 +6,6 @@
     line-height:  map-get($fonts-titlebold, 'line-height')
     font-weight:  map-get($fonts-titlebold, 'weight')
     color: var(--v-primary50)
-    margin-top: $layout-16
-    margin-bottom: $layout-32
     margin-left: calc((100vw - 312px) /2)
 .fest-schedule.v-card
     margin-bottom: 8px
@@ -17,8 +15,14 @@
     background-size: cover
     min-height: 100%
     width: 100%
-    position: fixed
-    height: 100vh
+    height: 100%
 #body
     margin-top: $layout-32
-    margin-bottom: $layout-56
+#footer 
+    margin-top: $layout-56
+#header 
+    position: fixed
+    top: 16px
+    left: calc( (100% - 1200px)/2 )
+    z-index: 2
+

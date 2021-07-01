@@ -1,14 +1,15 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Schedule from "../views/Schedule/Schedule.vue";
+import Store from "../views/Store/Store.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Schedule",
-    component: Schedule,
+    path: "/Store",
+    name: "Store",
+    component: Store,
   },
   {
     path: "/Schedule",

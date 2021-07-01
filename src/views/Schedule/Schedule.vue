@@ -1,26 +1,29 @@
 <template>
   <div id="schedule">
-      <div><label id="fest-schedule-title">CRONOGRAMA</label></div>
-    <v-main id="body">
+    <div id="header"><Header></Header></div>
+    <div id="titlediv"><label id="fest-schedule-title">CRONOGRAMA</label></div>
+    <div id="body">
       <schedule-card class="fest-schedule" v-for="card in schedulecards"
           :key="card.id"
           :imagen="card.imagen" 
           :texto="card.texto"></schedule-card>    
-    </v-main>
-    <div><Footer></Footer>></div>
+    </div>
+    <div id="footer"><Footer></Footer></div>
   </div>
 </template>
 
 <script>
 import ScheduleCard from '../../components/ScheduleCard/ScheduleCard.vue';
 import Footer from '../../components/Footer/Footer.vue';
+import Header from '../../components/Header/Header.vue';
 import "./Schedule.sass"
 export default {
   name: 'Schedule',
 
   components: {
     ScheduleCard,
-    Footer
+    Footer,
+    Header
   },
 
   data: () => ({
