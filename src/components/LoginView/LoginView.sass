@@ -1,4 +1,93 @@
 @import '../../styles/variables'
 
+.v-main__wrap
+    background-color: var(--v-primary900)
+    height: 100%
+    width: 100%
 
+.backgroundView
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQbnJoz-o65QuvOFNiIUr-rRKeHdKjooqJCbz4g5c0BH657bkUatzjQPM1_KIwSF_bElg&usqp=CAU')
+    position: fixed
+    min-height: 100%
+    width: 100%
+    background-size: cover
+
+.login_view
+    height: 720px
+    width: 1280px
+    margin-left: calc( ( 100% - 1280px) /2)
+    margin-right: calc( ( 100% - 1280px) /2) 
+    //background-image: '~@/../../assets/BackgroundImage.png'
+
+
+
+#login-carousel
+    padding-left: $spacing-48
+    padding-top: $layout-64
+    padding-right: $spacing-16 
+
+.login-buttons
+    padding-left: 760px
+    padding-top: 128px 
+
+.v-btn__content
+    display: -webkit-box 
     
+#buttonfacebook
+    padding-top: 128px
+    padding-left: $layout-120
+    font-size: map-get($fonts-paragraphM, 'size')
+    line-height:  map-get($fonts-paragraphM, 'line-height')
+    font-weight:  map-get($fonts-paragraphM, 'weight')
+
+#buttongoogle
+    padding-top: $spacing-24
+    padding-left: $layout-120
+    font-size: map-get($fonts-paragraphM, 'size')
+    line-height:  map-get($fonts-paragraphM, 'line-height')
+    font-weight:  map-get($fonts-paragraphM, 'weight')
+    margin-bottom: $layout-56
+
+.festimg
+    position: absolute  
+
+.festtext
+    background-color: var(--v-primary50)
+    color: var(--v-primary300)
+    width: 400px
+    height: 48px
+    margin-left: $layout-120 !important
+    margin-bottom: $layout-32 !important
+
+#festloginbtn
+    margin-left: 240px
+    width: 128px
+    height: 28px
+
+.festor
+    margin: 0px
+    margin-bottom: $layout-56
+    padding: 0px
+
+.festor2
+    margin: 0px
+    margin-bottom: $layout-56
+    padding: 0px
+    color: var(--v-primary300)
+
+#festlabel
+    margin: 0px
+    padding: 0px
+.v-text-field .v-label 
+    font-size: map-get($fonts-paragraphS, 'size') 
+    line-height:  map-get($fonts-paragraphS, 'line-height')
+    font-weight:  map-get($fonts-paragraphS, 'weight')
+    margin-left: $layout-24
+
+#festfalsedivider
+    padding: 0px 
+    margin-top: $spacing-12
+    width: 240px
+    height: 1px
+    background-color: var(--v-primary300)
+    color: var(--v-primary50)
