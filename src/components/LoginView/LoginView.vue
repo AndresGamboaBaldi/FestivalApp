@@ -80,17 +80,22 @@
             </v-col>
         </v-row>  
     </div>
+    <div>
+      <Footer/>
+    </div>
   </div>
 </template>
 
 <script>
   import "./LoginView.sass"
   import CarouselLarge from '../Carousel/CarouselLarge.vue';
+  import Footer from '../Footer/Footer.vue';
   export default {
     name: 'LoginView',
 
     components: {
     CarouselLarge,
+    Footer,
     },
     data:function () {
         return {
