@@ -1,8 +1,12 @@
 <template>
   <body>
-      <Header/>
-      <TicketCard />
-      <Footer />
+        <Header/>
+        <label>Tickets</label>
+        <button>Reservar</button>
+        <TicketCard />
+        <TicketCard />
+        <TicketCard />
+        <Footer />
   </body>
 </template>
 

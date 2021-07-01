@@ -1,7 +1,7 @@
 <template>
   <v-app :style="cssProps">
     <v-main>
-      <home-view/>
+      <Tickets/>
       <!--<events-card v-for="card in schedulecards"
         :key="card.id"
         :imagen="card.imagen"
@@ -46,8 +46,9 @@ import Footer from './components/Footer/Footer.vue';
 <events-card/>
 
 import HomeView from "./views/HomeView/HomeView.vue"
-import Tickets from "./views/TicketsView/Tickets.vue"
 */
+import Tickets from "./views/TicketsView/Tickets.vue"
+
 export default {
   name: 'App',
 
@@ -67,6 +68,7 @@ export default {
    HomeView
     Tickets
 */
+  Tickets
   },
   computed: {
    cssProps () {
