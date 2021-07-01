@@ -2,7 +2,7 @@
   <div id="store">
     <div id="header"><Header></Header></div>
     <div id="titlediv"><label id="fest-store-title">TIENDA</label></div>
-    <div id="body">
+    <div id="store-body">
       <button id="button"> Ver Todo </button>
       <v-row id="cards">
         <v-col v-for="card in storecards"
@@ -13,7 +13,7 @@
         </v-col>
       </v-row>    
     </div>
-    <div id="footer"><Footer></Footer></div>
+    <div id="store-footer"><Footer></Footer></div>
   </div>
 </template>
 

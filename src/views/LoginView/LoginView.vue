@@ -73,7 +73,7 @@
                 </v-row>
                 <v-row >   
                   <v-btn id='festloginbtn'
-                  >
+                  href="http://localhost:8080/#/Home">
                     Login
                   </v-btn>
                 </v-row>

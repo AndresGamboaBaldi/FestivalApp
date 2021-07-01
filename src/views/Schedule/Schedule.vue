@@ -2,13 +2,13 @@
   <div id="schedule">
     <div id="header"><Header></Header></div>
     <div id="titlediv"><label id="fest-schedule-title">CRONOGRAMA</label></div>
-    <div id="body">
+    <div id="schedule-body">
       <schedule-card class="fest-schedule" v-for="card in schedulecards"
           :key="card.id"
           :imagen="card.imagen" 
           :texto="card.texto"></schedule-card>    
     </div>
-    <div id="footer"><Footer></Footer></div>
+    <div id="schedule-footer"><Footer></Footer></div>
   </div>
 </template>
 
