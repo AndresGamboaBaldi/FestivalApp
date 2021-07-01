@@ -1,55 +1,32 @@
 <template>
-  <div>
     <div class="fest-carousel-long">
-      <v-carousel :show-arrows="false"
+        <v-carousel :show-arrows="false"
         cycle
         height="296"
         hide-delimiter-background
-      >
+        >
         <v-carousel-item
-          v-for="(data, i) in carousel_data"
-          :key="i"
-          :src="data.src"
+            v-for="(data, i) in carousel_data"
+            :key="i"
+            :src="data.src"
         >
             <v-col id="fest-carousel-long-title">
-              {{ data.title }}
+                {{ data.title }}
             </v-col>
             <v-col id="fest-carousel-long-comment">
-              {{ data.comment }}
+                {{ data.comment }}
             </v-col>
             <v-col id="fest-carousel-long-button">
-              <v-btn 
+                <v-btn 
                 height="24px"
                 width="96px"
-              >
+                >
                 Ver mas
-              </v-btn>
+                </v-btn>
             </v-col>
         </v-carousel-item>
-      </v-carousel>
+        </v-carousel>
     </div>
-    <div class="fest-carousel-large">
-      <v-carousel :show-arrows="false"
-        cycle
-        height="600"
-        width="596"
-        hide-delimiter-background
-      >
-        <v-carousel-item
-          v-for="(data, i) in carousel_data"
-          :key="i"
-          :src="data.src"
-        >
-            <v-col id="fest-carousel-large-title">
-              {{ data.title }}
-            </v-col>
-            <v-col id="fest-carousel-large-comment">
-              {{ data.comment }}
-            </v-col>
-        </v-carousel-item>
-      </v-carousel>
-    </div>
-  </div>  
 </template>
 
 <script>
@@ -66,7 +43,7 @@
             comment: 'Discover the festivals you are the most interested',
           },
           {
-            src: 'https://www.pariszigzag.fr/wp-content/uploads/2019/04/festival-paris-zigzag-e1555594557490.jpg',
+            src:'https://cdn.asiatatler.com/asiatatler/i/hk/2020/02/17144957-tomorrowland-festival-music-festival-hong-kong-tatler-2020-hero_cover_2000x1250.jpg',
             title: 'Live the Experience',
             comment: 'Listen to your favorite artists',
           },
@@ -75,16 +52,6 @@
             title: 'Madness Festival ',
             comment: 'Discover the artists that will play',
           },
-        ],
-        colors: [
-          'indigo',
-          'warning',
-          'pink darken-2',
-        ],
-        slides: [
-          'Next Events',
-          'Live the Experience',
-          'Madness Festival'
         ],
       }
     },

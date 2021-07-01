@@ -5,41 +5,44 @@
       tile 
       id="fest-card"
     >
-      <v-row >
-        <v-col class= "fest-coltitles">
-          {{ titles[0] }}
+      <v-row class= "fest-footer-row">
+        <v-col class= "fest-footer-col">
+          <v-row class= "fest-footer-title"> {{ titles[0] }}</v-row>
           <v-row
           v-for="text in novedades"
-          :key="text">
+          :key="text"
+          class= "fest-footer-body">
           {{ text }}
           </v-row>
         </v-col>
-        <v-col class= "fest-coltitles">
-          {{ titles[1] }}
+        <v-col class= "fest-footer-col">
+          <v-row class= "fest-footer-title"> {{ titles[1] }}</v-row>
           <v-row
           v-for="text in cronograma"
-          :key="text">
+          :key="text"
+          class= "fest-footer-body">
           {{ text }}
           </v-row>
         </v-col>
-        <v-col class= "fest-coltitles">
-          {{ titles[2] }}
+        <v-col class= "fest-footer-col">
+          <v-row class= "fest-footer-title"> {{ titles[2] }}</v-row>
           <v-row
           v-for="text in tienda"
-          :key="text">
+          :key="text"
+          class= "fest-footer-body">
           {{ text }}
           </v-row>
         </v-col>
-        <v-col class= "fest-coltitles" id="fest-lastcol">
-          {{ titles[3] }}
+        <v-col class= "fest-footer-col" id="fest-lastcol">
+          <v-row class= "fest-footer-title"> {{ titles[3] }}</v-row>
           <v-row
           v-for="text in informacion"
-          :key="text">
+          :key="text"
+          class= "fest-footer-body">
           {{ text }}
           </v-row>
         </v-col>
       </v-row>
-
       <v-divider id="divider"></v-divider>
 
       <v-card-text>

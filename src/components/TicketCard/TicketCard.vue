@@ -1,5 +1,5 @@
 <template>
-  <v-card class="fest-ticket-card" img="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/02/06/Pictures/_24d141fc-48a1-11ea-b9ea-c2a424b98379.jpg">
+  <v-card class="fest-ticket-card" :img="imagen">
     <v-card-title class="fest-ticket-card">
       Festival Card
     </v-card-title>
@@ -7,7 +7,7 @@
         1 access to all stages only to Friday July 16 with sets of the best artist in the world
     </v-card-text>
     <v-card-subtitle class="fest-ticket-card">
-        1x Festival Pass
+        {{pase}}
     </v-card-subtitle>
   </v-card>
 </template>
@@ -16,6 +16,18 @@
 import "./TicketCard.sass"
 export default {
   name: 'TicketCard',
+  props: {
+  imagen: 
+    {
+    type: String,
+    default: "https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/02/06/Pictures/_24d141fc-48a1-11ea-b9ea-c2a424b98379.jpg"
+    },
+  pase: 
+    {
+    type: String,
+    default: "1x Festival Pass"
+    }
+  },
   data(){
     return{
       image:[
