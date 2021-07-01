@@ -4,7 +4,7 @@
       <v-col class="fest-firstcol"> {{ titles[0] }} </v-col>
       <v-col class="fest-col"> {{ titles[1] }} </v-col>
       <v-col class="fest-col"> {{ titles[2] }} </v-col>
-      <v-col class="fest-col"> {{ titles[2] }} </v-col>
+      <v-col class="fest-col"> {{ titles[3] }} </v-col>
       <v-col class="fest-lastcol"> {{ titles[4] }} </v-col>
       <v-icon class="fest-lasticon">mdi-account-circle-outline</v-icon>
     </v-app-bar>
