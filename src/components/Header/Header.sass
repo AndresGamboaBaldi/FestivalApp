@@ -1,58 +1,50 @@
 @import '../../styles/variables'
 
 #fest-header
-    height: 72px !important
-    width: 1200px !important
+    height: 72px 
+    width: 1200px 
     margin-left: calc( (100% - 1200px)/2)
     background-color: var(--v-primary900)
     padding: 0px
     text-align: center
-    padding: 0px 0px !important
-    border-radius: 8px
 
-.v-btn
-    letter-spacing: 0.0em !important
-    text-transform: none !important
-
-.v-btn--is-elevated 
-    box-shadow: var(--v-primary900) !important
-
-.v-btn:not(.v-btn--round).v-size--default 
-    height: 48px !important
-    min-width: 40px !important
-    padding: 0 0px !important
-
-.theme--light.v-btn.v-btn--has-bg 
-    background-color: var(--v-primary900) !important
- 
 .v-toolbar__content
     padding: 0px 0px !important
     height: 72px !important
     width: 1200px !important
 
-.v-toolbar__extension  
-    padding: 0px 0px !important
-    height: 72px !important
-    width: 1200px !important
-
 .fest-firsticon
-    margin-top: $spacing-12 !important
-    margin-left: $layout-56 !important
-    margin-bottom: $spacing-12 !important
-    height: 48px !important
-    width: 40px !important
+    margin-top: $spacing-12 
+    margin-left: $layout-24 
+    margin-bottom: $spacing-12 
+    height: 48px 
+    width: 40px 
     font-size: 40px !important
     color: var(--v-primary50) !important
 
 .fest-lasticon
-    margin-top: $layout-16 !important
-    margin-left: $layout-256 !important
-    margin-bottom: $layout-16 !important
-    margin-right: $layout-56 !important
-    height: 40px !important
-    width: 40px !important
+    margin-top: $layout-16 
+    margin-left: $layout-248
+    margin-bottom: $layout-16 
+    height: 40px 
+    width: 40px 
     font-size: 40px !important
     color: var(--v-primary50) !important
+
+.fest-firstcol
+    font-size: map-get($fonts-footer, 'size')
+    line-height:  map-get($fonts-footerBold, 'line-height')
+    font-weight:  map-get($fonts-title, 'weight')
+    margin-top: $layout-24 !important
+    margin-left: $layout-256 !important
+    margin-right: 0px
+    margin-bottom: $layout-24 !important
+    text-align: center
+    padding: 0px
+    width: 96px
+    height: 24px
+    color: var(--v-primary50)
+    margin: 0px
 
 .fest-col
     font-size: map-get($fonts-footer, 'size')
@@ -66,32 +58,30 @@
     height: 24px
     color: var(--v-primary50)
 
-.fest-col:hover
-    font-size: map-get($fonts-footer, 'size')
-    line-height:  map-get($fonts-footerBold, 'line-height')
-    font-weight:  map-get($fonts-footerBold, 'weight')
-    color: var(--v-info200)
-
-.fest-firstcol
+.fest-col64
     font-size: map-get($fonts-footer, 'size')
     line-height:  map-get($fonts-footerBold, 'line-height')
     font-weight:  map-get($fonts-title, 'weight')
-    margin-top: $layout-24 !important
-    margin-left: 248px !important
-    margin-right: 0px
-    margin-bottom: $layout-24 !important
-    text-align: center
+    margin-top: $layout-24
+    margin-left: $layout-40
+    margin-bottom: $layout-24
     padding: 0px
-    width: 96px
+    width: 64px
     height: 24px
     color: var(--v-primary50)
-    margin: 0px
 
-.fest-firstcol:hover
+
+.fest-col56
     font-size: map-get($fonts-footer, 'size')
     line-height:  map-get($fonts-footerBold, 'line-height')
-    font-weight:  map-get($fonts-footerBold, 'weight')
-    color: var(--v-info200)
+    font-weight:  map-get($fonts-title, 'weight')
+    margin-top: $layout-24
+    margin-left: $layout-40
+    margin-bottom: $layout-24
+    padding: 0px
+    width: 56px
+    height: 24px
+    color: var(--v-primary50)
 
 .fest-lastcol
     font-size: map-get($fonts-footer, 'size')
@@ -108,8 +98,12 @@
     color: var(--v-primary50)
     margin: 0px
 
-.fest-lastcol:hover
+.fest-router
+    color: var(--v-primary50) !important
+    text-decoration: none
+
+.fest-router:hover
     font-size: map-get($fonts-footer, 'size')
     line-height:  map-get($fonts-footerBold, 'line-height')
     font-weight:  map-get($fonts-footerBold, 'weight')
-    color: var(--v-info200)
+    color: var(--v-info200) !important

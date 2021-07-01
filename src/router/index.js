@@ -4,6 +4,7 @@ import Schedule from "../views/Schedule/Schedule.vue";
 import Store from "../views/Store/Store.vue";
 import Home from "../views/HomeView/HomeView.vue";
 import Login from "../views/LoginView/LoginView.vue";
+import Tickets from "../views/TicketsView/Tickets.vue"
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,11 @@ const routes = [
     name: "Login",
     component: Login,
   },
+    {
+    path: "/Tickets",
+    name: "Tickets",
+    component: Tickets,
+  }
 ];
 
 const router = new VueRouter({
