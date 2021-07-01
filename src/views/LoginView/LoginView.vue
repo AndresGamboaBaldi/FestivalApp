@@ -40,18 +40,13 @@
                     </v-btn>
                   </div>
                 </v-row >
-                <v-row>
-                  <v-col class='festor'>
-                    <div id='festfalsedivider'></div>
-                  </v-col>
-                  <v-col class='festor2'
-                  style="padding-left:48px">
-                    <label id='festlabel'>or</label>
-                  </v-col >
-                  <v-col class='festor'> 
-                    <div id='festfalsedivider'></div>
-                  </v-col>
+
+                <v-row >
+                  <v-divider id='festfalsedivider' style="margin-left:40px"></v-divider>
+                  <label class='festor2' id='festlabel'>or</label>
+                  <v-divider id='festfalsedivider'></v-divider>
                 </v-row>
+
                 <v-row class='festtext'
                 >
                   <v-text-field 
@@ -103,4 +98,12 @@
         }
     },
   }
+/*
+  <div class="falsedivider">
+    <div class='festor' id='festfalsedivider' style="margin-right=16px"></div>
+    <div><label class='festor2' id='festlabel'>or</label></div>
+    <div class='festor' id='festfalsedivider' ></div>
+  </div>
+*/
 </script>
+
