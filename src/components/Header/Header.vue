@@ -8,7 +8,7 @@
       </button>
       <button>
         <v-col class="fest-firstcol">
-          <router-link class="fest-router" to="/Store">
+          <router-link class="fest-router" to="/Home">
             {{ titles[0] }}
           </router-link> 
         </v-col>
