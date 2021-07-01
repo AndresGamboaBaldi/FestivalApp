@@ -35,22 +35,22 @@ export default {
     storecards: [
       {
         id: 1,
-        imagen: "https://ventaspop-images.staticgnt.com/cWc4-OW0pNEsDeS6mUSn8xynUQg=/filters:quality(100)/files/products/167/5493/229383.jpg",
+        imagen: "https://i.ebayimg.com/images/g/G-YAAOSwqctcf6Oe/s-l1600.png",
         texto: "Poleras" 
       },
        {
         id:2,
-        imagen: "https://www.manualidadesinfantiles.org/wp-content/uploads/DSC_0189-1088x728.jpg",
+        imagen: "https://cf.shopee.co.id/file/6e775bf04aadaefb96019caf10ef9cb4_tn",
         texto: "Accesorios" 
       },
       {
         id: 3,
-        imagen: "https://images.asos-media.com/products/sombrero-pork-pie-con-corona-de-rombo-en-gris-marga-con-detalle-de-banda-de-asos-design/10426304-1-grey?$XXL$&wid=513&fit=constrain",
+        imagen: "https://i.pinimg.com/originals/5b/7d/e2/5b7de2804f2c33c867ef72ecf8fd759b.png",
         texto: "Sombreros" 
       },
        {
         id: 4,
-        imagen: "https://esbarrio.com/wp-content/uploads/2017/06/chelas-2.jpg",
+        imagen: "https://i.pinimg.com/564x/1d/5c/9d/1d5c9d1478ffc3f1dbc5cd06162d5204.jpg",
         texto: "Otros" 
       }
     ],
