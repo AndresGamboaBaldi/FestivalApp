@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Schedule from "../views/Schedule/Schedule.vue";
 import Store from "../views/Store/Store.vue";
 import Home from "../views/HomeView/HomeView.vue";
+import Login from "../views/LoginView/LoginView.vue";
 
 Vue.use(VueRouter);
 
@@ -18,9 +19,14 @@ const routes = [
     component: Schedule,
   },
   {
-    path: "/",
+    path: "/Home",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/",
+    name: "Login",
+    component: Login,
   },
 ];
 
