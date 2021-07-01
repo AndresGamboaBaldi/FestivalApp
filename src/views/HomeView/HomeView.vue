@@ -6,7 +6,9 @@
     </div>
 
     <div id="fest-home-body">
-      <carousel-long />
+    <div id="fest-home-carousel">
+      <Carousel-long />
+    </div>
       <div id="fest-home-event-text">Events</div>
       <div id="fest-home-events-row">
         <events-card
