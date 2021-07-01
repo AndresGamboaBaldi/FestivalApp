@@ -1,14 +1,14 @@
 <template>
     <div class="components">
-    <div id="header"><Header/></div>
-    <div class="fest-carousel-large"><CarouselLarge/></div>
-    <div class="fest-carousel-long "><CarouselLong/></div>
-    <div class="fest-events-card"><EventsCard/></div>
-    <div class="fest-news-card"><NewsCard/></div>
-    <div class="fest-schedule-card"><ScheduleCard/></div>
-    <div class="fest-store-card"><StoreCard/></div>
-    <div class="fest-ticket-card"><TicketCard/></div>
-    <div id="fest-footer"><Footer/></div>
+    <Header/>
+    <CarouselLarge/>
+    <CarouselLong/>
+    <EventsCard/>
+    <NewsCard/>
+    <ScheduleCard/>
+    <StoreCard/>
+    <TicketCard/>
+    <Footer/>
     </div>
 </template>
 <script>
