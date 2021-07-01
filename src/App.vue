@@ -12,8 +12,8 @@
       <Hello-world/>
       <ScheduleCard/>
       <Footer/>
-      <LoginView/>
       -->
+      <LoginView/>
     </v-main>
   </v-app>
 </template>
@@ -32,8 +32,8 @@ import EventsCard from './components/EventsCard/EventsCard.vue'
 import NewsCard from './components/NewsCard/NewsCard.vue'
 import CarouselLarge from './components/Carousel/CarouselLarge.vue';
 import CarouselLong from './components/Carousel/CarouselLong.vue';
-import LoginView from './components/LoginView/LoginView.vue'
 */
+import LoginView from './components/LoginView/LoginView.vue';
 export default {
   name: 'App',
 
@@ -47,8 +47,8 @@ export default {
       NewsCard,
       CarouselLarge,
       CarouselLong,
-      LoginView,
     */
+      LoginView,
   },
   computed: {
    cssProps () {
