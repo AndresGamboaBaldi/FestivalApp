@@ -44,8 +44,10 @@ import Footer from './components/Footer/Footer.vue';
 <store-card/>
 <ticket-card/>
 <events-card/>
-*/
+
 import HomeView from "./views/HomeView/HomeView.vue"
+import Tickets from "./views/TicketsView/Tickets.vue"
+*/
 export default {
   name: 'App',
 
@@ -61,8 +63,10 @@ export default {
       CarouselLarge,
       CarouselLong,
       LoginView,
-    */
+    
    HomeView
+    Tickets
+*/
   },
   computed: {
    cssProps () {
