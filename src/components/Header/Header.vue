@@ -28,7 +28,7 @@
   export default {
     name: 'Header',
     data: () => ({
-      titles: ['NOVEDADES', 'CRONOGRAMA', 'TIENDA', 'INFORMACION'],
+      titles: ['Novedades', 'Cronograma','Tickets', 'Tienda', 'Informacion'],
       novedades: ['Proximos Eventos', 'Artistas', 'Antiguos Eventos'],
       cronograma: ['Viernes', 'Sabado', 'Domingo', 'Lunes'],
       tienda: ['Poleras', 'Sombreros', 'Accesorios', 'Otros'],

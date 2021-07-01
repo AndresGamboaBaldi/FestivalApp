@@ -1,10 +1,10 @@
 <template>
-  <v-card class="fest-events-card" img="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/02/06/Pictures/_24d141fc-48a1-11ea-b9ea-c2a424b98379.jpg">
+  <v-card class="fest-events-card" :img="imagen">
     <v-card-title class="fest-events-card">
-      Rainbow Fest
+      {{texto}}
     </v-card-title>
     <v-card-subtitle class="fest-events-card">
-        July 16 & 17, 2021
+        {{subtitulo}}
     </v-card-subtitle>
   </v-card>
 </template>
@@ -13,6 +13,20 @@
 import "./EventsCard.sass"
 export default {
   name: 'TicketCard',
+  props: {
+    imagen: {
+      type: String,
+      default:"https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/02/06/Pictures/_24d141fc-48a1-11ea-b9ea-c2a424b98379.jpg"
+    },
+    texto:{
+      type: String,
+      default: "Rainbow Fest"
+    },
+    subtitulo:{
+      type: String,
+      default: "July 16 & 17, 2021"
+    }
+  },
   data(){
     return{
       image:[

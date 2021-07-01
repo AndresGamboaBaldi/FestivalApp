@@ -1,9 +1,13 @@
 <template>
   <v-app :style="cssProps">
     <v-main>
-      <Tickets/>
-      <!--home-view/-->
-      <!--<store-card/>
+      <home-view/>
+      <!--<events-card v-for="card in schedulecards"
+        :key="card.id"
+        :imagen="card.imagen"
+        :texto="card.texto"
+        :subtitulo="card.subtitulo"></events-card> 
+      <store-card/>
       <ticket-card/>
       <events-card/>
       <news-card/>
@@ -18,18 +22,14 @@
       <schedule-card  v-for="card in schedulecards"
           :key="card.id"
           :imagen="card.imagen" 
-          :texto="card.texto"></schedule-card>  -->  
+          :texto="card.texto"></schedule-card>   
+      <LoginView/>
+      -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-//import Footer from './components/Footer/Footer';
-//import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
-//import Footer from './components/Footer/Footer.vue';
-//<store-card/>
-//<ticket-card/>
-//<events-card/>
 /*
 import Header from './components/Header/Header.vue'
 import StoreCard from './components/StoreCard/StoreCard.vue';
@@ -38,18 +38,16 @@ import EventsCard from './components/EventsCard/EventsCard.vue'
 import NewsCard from './components/NewsCard/NewsCard.vue'
 import CarouselLarge from './components/Carousel/CarouselLarge.vue';
 import CarouselLong from './components/Carousel/CarouselLong.vue';
-*/
-/*
-import StoreCard from './components/StoreCard/StoreCard.vue';
+import LoginView from './components/LoginView/LoginView.vue'
 import ScheduleCard from './components/ScheduleCard/ScheduleCard.vue';
-import TicketCard from './components/TicketCard/TicketCard.vue';
-import EventsCard from './components/EventsCard/EventsCard.vue'
-import NewsCard from './components/NewsCard/NewsCard.vue'
-import Carousel from './components/Carousel/Carousel.vue';
 import Footer from './components/Footer/Footer.vue';
-*/
-//import HomeView from "./views/HomeView/HomeView.vue"
+<store-card/>
+<ticket-card/>
+<events-card/>
+
+import HomeView from "./views/HomeView/HomeView.vue"
 import Tickets from "./views/TicketsView/Tickets.vue"
+*/
 export default {
   name: 'App',
 
@@ -63,19 +61,12 @@ export default {
       EventsCard,
       NewsCard,
       CarouselLarge,
-      CarouselLong
-    */
-   /*
-    ScheduleCard,
-    Footer,
-    StoreCard,
-    TicketCard,
-    EventsCard,
-    NewsCard,
-    Carousel
-    */
-   //HomeView
+      CarouselLong,
+      LoginView,
+    
+   HomeView
     Tickets
+*/
   },
   computed: {
    cssProps () {
@@ -92,12 +83,14 @@ export default {
       {
         id: 1,
         imagen: "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/12/28/16091698032437.jpg",
-        texto: "Viernes" 
+        texto: "Viernes",
+        subtitulo: "jabalajaba"
       },
        {
         id:2,
         imagen:  "https://www.brusselstimes.com/wp-content/uploads/2019/04/k2_items_src_885112323029b4ff67c59e5af71d2a8a.jpg",
-        texto: "Sabado" 
+        texto: "Sabado",
+        subtitulo: "jabalajaba2"
       }
     ],
     
