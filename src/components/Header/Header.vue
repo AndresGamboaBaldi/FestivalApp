@@ -1,5 +1,6 @@
 <template>
-    <v-app-bar id="fest-header" class="v-toolbar__content .v-toolbar__extension">
+  <div class="div"> 
+  <v-app-bar id="fest-header" class="v-toolbar__content .v-toolbar__extension">
       <v-btn>
       <v-icon class="fest-firsticon">mdi-fire</v-icon>
       </v-btn>
@@ -18,8 +19,8 @@
       <v-btn>
       <v-icon class="fest-lasticon">mdi-account-circle-outline</v-icon>
       </v-btn>
-      
     </v-app-bar>
+  </div>
 </template>
 
 <script>
